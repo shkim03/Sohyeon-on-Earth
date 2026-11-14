@@ -1,0 +1,17 @@
+@font-face {
+  font-family: Field;
+  src: url("./type/field-roman.otf") format("opentype");
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Field;
+  src: url("./type/field-italic.otf") format("opentype");
+  font-style: italic;
+  font-display: swap;
+}
+
+:root {
+  --grain-image: url("./grain.svg");
+}

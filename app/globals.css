@@ -1,5 +1,3 @@
-@font-face{font-family:Field;src:url("/type/field-roman.otf") format("opentype");font-style:normal;font-display:swap}
-@font-face{font-family:Field;src:url("/type/field-italic.otf") format("opentype");font-style:italic;font-display:swap}
 :root{color-scheme:dark;--ink:#0a090b;--pink:#ff78bb;--paper:#f2e8e4;--muted:#b9a8b4;--line:#3a2935;--serif:Field,Georgia,serif;--mono:"Courier New",monospace}
 *,*::before,*::after{box-sizing:border-box}
 html{scroll-behavior:smooth}
@@ -24,7 +22,7 @@ h1,h2,h3,h4,p,figure{margin:0}
 .stage-meta i{color:var(--pink);font-style:normal;padding:0 4px}
 .dot{display:inline-block;border-radius:50%;width:7px;height:7px;background:var(--pink);margin-right:4px;box-shadow:0 0 12px #ff78bb99}
 .halo{position:absolute;inset:0;z-index:-1;background:radial-gradient(ellipse at 51% 52%,#511837 0%,#260f28 25%,#100e1b 45%,transparent 73%);opacity:.8}
-.halo::after{content:"";position:absolute;inset:0;background:url("/grain.svg");opacity:.18;mix-blend-mode:screen}
+.halo::after{content:"";position:absolute;inset:0;background-image:var(--grain-image);opacity:.18;mix-blend-mode:screen}
 .orbit{position:absolute;inset:15% 4% auto;width:92%;height:70%;color:#c36a9f;opacity:.57;pointer-events:none}
 .hero-title{position:absolute;z-index:2;top:14%;left:0;width:100%;text-align:center;color:var(--pink);font:400 clamp(107px,min(13.8vw,23cqh),210px)/.8 var(--serif);letter-spacing:-.062em}
 .hero-title>span,.hero-title em{display:block}

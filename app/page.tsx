@@ -1,3 +1,5 @@
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
+
 const stops = [
   {
     id: "research",
@@ -35,7 +37,7 @@ export default function Home() {
       <a className="skip" href="#main">본문으로 건너뛰기</a>
       <header className="masthead">
         <a className="brand" href="#top" aria-label="Sohyeon on Earth 홈">
-          <img src="/favicon.svg" alt="" width="40" height="40" />
+          <img src={`${basePath}/favicon.svg`} alt="" width="40" height="40" />
           <span>SOHYEON<br/>ON EARTH</span>
         </a>
         <nav className="nav" aria-label="주 메뉴">
@@ -62,7 +64,7 @@ export default function Home() {
             </h1>
 
             <figure className="terrain" aria-hidden="true">
-              <div className="terrain-image"><img src="/terrain.webp" alt="" width="520" height="670"/></div>
+              <div className="terrain-image"><img src={`${basePath}/terrain.webp`} alt="" width="520" height="670"/></div>
               <figcaption className="mono"><span>FIG. 01</span><span>THE GROUND</span></figcaption>
             </figure>
 
@@ -90,7 +92,7 @@ export default function Home() {
             <Star className="star star-three"/>
 
             <div className="bus" aria-hidden="true">
-              <img src="/blue-bus.webp" alt="" width="1050" height="650" fetchPriority="high"/>
+              <img src={`${basePath}/blue-bus.webp`} alt="" width="1050" height="650" fetchPriority="high"/>
             </div>
 
             <a className="ticket" href="#stops" aria-label="지구행 티켓으로 목차 보기">

@@ -8,3 +8,5 @@ This repository contains Sohyeon Kim's personal homepage about atmosphere, lands
 - The homepage design uses a near-black background, oversized pink serif lettering, and a cobalt-blue bus layered with terrain and atmosphere postcards. Preserve that direction unless the requested change revises it.
 - Keep the Korean body copy and English wordmark, unless the requested change revises the copy.
 - Use Node.js 22 or newer. Run `npm ci` to install, `npm run dev` for local preview, and `npm run build` to verify the static export. The generated files go into `out/`.
+
+- GitHub Actions deploys `main` to GitHub Pages. The intended public domain is `aerohypegirl.com`. Keep both the root and GitHub Pages project subpath builds working by using the configured base path for public asset links.
