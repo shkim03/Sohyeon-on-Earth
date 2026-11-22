@@ -1,12 +1,17 @@
-# Sohyeon on Earth
+# Sohyeon on Earth — project guide
 
-This repository contains Sohyeon Kim's personal homepage about atmosphere, landscapes, and everyday life. It uses the Next.js App Router with TypeScript and static export.
+This is a GitHub Pages-deployed static Next.js App Router project (Next.js 16, React 19, TypeScript). Node.js 22+.
 
-- Work in `app/page.tsx` for homepage structure, copy, and the Research, Notes, and About sections.
-- Work in `app/globals.css` for color, typography, collage placement, and responsive styling.
-- Keep local artwork and fonts under `public/`. The main artwork is `public/blue-bus.webp`.
-- The homepage design uses a near-black background, oversized pink serif lettering, and a cobalt-blue bus layered with terrain and atmosphere postcards. Preserve that direction unless the requested change revises it.
-- Keep the Korean body copy and English wordmark, unless the requested change revises the copy.
-- Use Node.js 22 or newer. Run `npm ci` to install, `npm run dev` for local preview, and `npm run build` to verify the static export. The generated files go into `out/`.
+Design direction: magical girl × sci-fi × Y2K web game. Pink/lilac glow, decorative sparkles, pixel laboratory central hero, retro desktop app sidebars. Do not revert to the older black/pink blue-bus collage.
 
-- GitHub Actions deploys `main` to GitHub Pages. The intended public domain is `aerohypegirl.com`. Keep both the root and GitHub Pages project subpath builds working by using the configured base path for public asset links.
+## Files
+- `app/page.tsx` — interactive home, pixel SVG scene, dress-up game, profile, blog sidebar.
+- `app/globals.css` — styling and breakpoints.
+- `data/posts.ts` — plain typed array of posts, newest by date. Add entries here.
+- `app/blog/page.tsx`, `app/blog/[slug]/page.tsx` — static blog pages.
+- `app/layout.tsx` — metadata.
+- `public/CNAME` — custom domain.
+
+The source ChatGPT Sites layout and proprietary artwork were not accessible for automatic export. This is an independent approximation based on established design requirements. Prefer replacing the logo with the user's actual asset when available, and do not claim exact pixel matching.
+
+Keep GitHub Pages static export functional. Test with `npm ci && npm run typecheck && npm run build`.
